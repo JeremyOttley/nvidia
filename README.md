@@ -8,6 +8,7 @@ cd ~
 sudo apt-get check && sudo apt-get update && sudo apt-get autoremove --purge && sudo apt-get autoclean
 sudo apt-get -y install build-essential git make nmap zsh curl libssl-dev libreadline-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
 sudo apt-get -y install autoconf automake unattended-upgrades clang apt-transport-https samba fonts-hack-ttf libxtf-dev libx11-dev xorg-dev libxinerama-dev libharfbuzz-dev gnupg2
+sudo apt-get -y install vifm rtv newsboat
 
 git config --global user.name "jeremyottley"
 git config --global user.email "jeremy.ottley@gmail.com"
@@ -80,12 +81,12 @@ cd ~/bin
 gitlab surf-distrotube
 cd ~/bin/surf-distrotube
 
-mkdir ~/.fonts
-cd ~/.fonts
-wget https://drive.google.com/u/0/uc?export=download&confirm=KPsu&id=1cditOi_aNK08oROzUJAd3i80pZZ0me4O
-unzip joypixels-6.1-free-fonts.zip
-mv -v *.zip ~/bin/
-cd ~
+#mkdir ~/.fonts
+#cd ~/.fonts
+#wget https://drive.google.com/u/0/uc?export=download&confirm=KPsu&id=1cditOi_aNK08oROzUJAd3i80pZZ0me4O
+#unzip joypixels-6.1-free-fonts.zip
+#mv -v *.zip ~/bin/
+#cd ~
 
 # xinitrc and/or desktop file
 
