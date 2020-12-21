@@ -36,6 +36,12 @@ sudo cp -r wallpapers/* /usr/share/wallpapers/
 
 gitlab dotfiles
 cp -r ~/dotfiles/.local/ ~/.local
+cp -r ~/dotfiles/.dmenu ~/.dmenu
+cp -r ~/dotfiles/.surf ~/.surf
+cp -r ~/dotfiles/.config/picom ~/.config/picom
+cp -r ~/dotfiles/.config/rofi ~/.config/rofi
+cp -r ~/dotfiles/.config/vifm ~/.config/vifm
+rm -rf ~/dotfiles
 
 gitlab shell-color-scripts ~/bin/shell-color-scripts
 cd shell-color-scripts
@@ -50,9 +56,19 @@ cd ~/bin/tabbed-distrotube
 sudo make clean install
 cd ~/bin
 
+gitlab dwm-distrotube
+cd ~/bin/dwm-distrotube
+sudo make clean install
+wget https://raw.githubusercontent.com/JeremyOttley/dwm/master/utils/backup_config
+cd ~/bin
 
 gitlab dmenu-distrotube
 cd ~/bin/dmenu-distrotube
+sudo make clean install
+cd ~/bin
+
+gitlab st-distrotube
+cd ~/bin/st-distrotube
 sudo make clean install
 cd ~/bin
 
@@ -61,24 +77,15 @@ cd ~/bin/dwmblocks-distrotube
 gcc dwmblocks.c -lX11 -o dwmblocks
 cd ~/bin
 
-gitlab dwm-distrotube
-cd ~/bin/dwm-distrotube
-sudo make clean install
-wget https://raw.githubusercontent.com/JeremyOttley/dwm/master/utils/backup_config
-cd ~/bin
-
-gitlab st-distrotube
-cd ~/bin/st-distrotube
-sudo make clean install
-cd ~/bin
-
 gitlab surf-distrotube
 cd ~/bin/surf-distrotube
 
-
+mkdir ~/.fonts
+cd ~/.fonts
+wget https://drive.google.com/u/0/uc?export=download&confirm=KPsu&id=1cditOi_aNK08oROzUJAd3i80pZZ0me4O
+unzip joypixels-6.1-free-fonts.zip
+mv -v *.zip ~/bin/
 cd ~
-
-
 
 # xinitrc and/or desktop file
 
