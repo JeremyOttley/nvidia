@@ -5,7 +5,7 @@
 (deftask fmt 
   "fmt file or dir using cljfmt (changes files)"
   [f files VAL str "file(s) to format"]
-  (set-env! :dependencies '[[cljfmt "0.3.0"]])
+  (set-env! :dependencies '[[cljfmt "0.6.4"]])
   (require 'cljfmt.core
            'clojure.java.io)
   (let [reformat-string (resolve 'cljfmt.core/reformat-string)
