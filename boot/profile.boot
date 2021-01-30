@@ -1,3 +1,22 @@
+(set-env! :dependencies '[[org.clojure/clojure   "1.10.2"]
+			  [me.raynes/fs "1.4.6"]
+			  [clj-http "3.10.0"]
+[cheshire "5.10.0"]]
+          :source-paths #{"src/"})
+
+(require '[me.raynes.fs :as fs])
+(require '[clojure.java.io :as io])
+(require '[clj-http.client :as http])
+(require '[cheshire.core :refer :all])
+(require '[clojure.java.javadoc :as javadoc :refer (javadoc)])
+(require '[clojure.stacktrace :as stacktrace :refer (e)])
+(require '[clojure.set :as set])
+(require '[clojure.string :as str])
+(require '[clojure.core.reducers :as reducers])
+(require '[clojure.edn :as edn])
+(require '[clojure.spec.alpha :as spec])
+(require '[clojure.walk :as walk])
+
 ;;;;;;;;;;;
 ;; TASKS ;;
 ;;;;;;;;;;;
