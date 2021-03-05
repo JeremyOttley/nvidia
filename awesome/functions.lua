@@ -3,6 +3,7 @@ function twitch_stream()
   return os.execute("streamlink --twitch-low-latency " .. "https://www.twitch.tv/" .. channel .. " best")
 end
 
+--
 -- two versions
 
 abyss = " >/dev/null 2>&1 &"
@@ -17,3 +18,8 @@ function launch(url)
 end
 
 -- launch("twitch.tv/varsitygaming")
+--
+
+function error(message)
+  return io.write(message .. "\n")
+end
