@@ -91,3 +91,5 @@ cd ~/bin/surf-distrotube
 # xinitrc and/or desktop file
 
 #https://github.com/thann/play-with-mpv
+
+# https://github.com/lawl/NoiseTorch
