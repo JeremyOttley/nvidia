@@ -1,0 +1,21 @@
+--default-search "youtube1:"
+--yes-playlist
+--output "${HOME}/Videos/%(title)s-%(resolution)s.%(ext)s"
+--no-overwrites
+--audio-format "flac"
+--audio-quality 0
+--buffer-size 1024
+--continue
+--geo-bypass
+--hls-prefer-ffmpeg
+--no-call-home
+--no-check-certificate
+--no-playlist
+--prefer-ffmpeg
+--prefer-free-formats
+--merge-output-format mp4
+--format "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"
+--restrict-filenames
+--retries 3
+--skip-unavailable-fragments
+--youtube-skip-dash-manifest
